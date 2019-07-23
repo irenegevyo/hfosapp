@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/veggies"
+    tools:context=".HomePage">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="324dp"
+        android:layout_height="442dp"
+        android:background="@drawable/homebox"
+        android:gravity="center"
+        android:text="@string/welcometext"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="190dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="416dp"
+        android:background="@drawable/buttonbox"
+        android:text="@string/view"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/welcome" />
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="476dp"
+        android:background="@drawable/buttonbox"
+        android:text="@string/insert"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/welcome" />
+</android.support.constraint.ConstraintLayout>

@@ -47,7 +47,7 @@
         android:id="@+id/button_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="35dp"
         android:background="@drawable/box"
         android:text="@string/masuk"
         android:textColor="@android:color/white" />
