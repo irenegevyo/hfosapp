@@ -3,4 +3,18 @@
     <string name="input_nomor_induk">Input Nomor Induk</string>
     <string name="input_email_anda">input email anda</string>
     <string name="masuk">Masuk</string>
+    <string name="welcometext">Selamat Datang User!
+
+        \n\n
+<b>Hospital Food Ordering Service (HFOS) adalah aplikasi yang hadir untuk membantu
+pekerjaan anda dalam mengorganisir pesanan makanan di RSUD Bandung.
+Terdapat dua fitur utama pada HFOS, View dan Insert.</b>
+        \n\n
+
+<b>View digunakan untuk melihat hasil pesanan dari setiap ruangan,
+    dan Insert adalah fitur yang akan digunakan untuk menginput pesanan dari setiap ruangan.</b>
+
+</string>
+    <string name="view">View</string>
+    <string name="insert">insert</string>
 </resources>
