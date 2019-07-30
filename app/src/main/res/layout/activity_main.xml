@@ -22,7 +22,7 @@
         android:layout_marginBottom="20dp"
         android:src="@drawable/hfoslogo" />
     <EditText
-        android:id="@+id/login"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
@@ -33,12 +33,12 @@
         tools:ignore="Autofill" />
 
     <EditText
-        android:id="@+id/nomorinduk"
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:background="@android:color/white"
-        android:hint="@string/input_nomor_induk"
+        android:hint="@string/input_password"
         android:inputType="textPassword"
         android:padding="10dp"
         tools:ignore="Autofill" />
@@ -50,6 +50,7 @@
         android:layout_margin="35dp"
         android:background="@drawable/box"
         android:text="@string/masuk"
+        android:onClick="onClick"
         android:textColor="@android:color/white" />
 
 
