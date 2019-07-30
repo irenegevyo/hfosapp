@@ -10,14 +10,14 @@
 
     <TextView
         android:id="@+id/viewtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="139dp"
+        android:layout_height="53dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="@string/viewtitle"
+        android:text="INSERT"
         android:textAlignment="center"
         android:textColor="#ffff"
         android:textSize="35sp"
@@ -39,6 +39,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/option"
+        android:textStyle="bold"
         android:padding="10dp"
         android:text="@string/ruangan"
         android:textAlignment="center"
@@ -62,7 +63,8 @@
         app:layout_constraintBottom_toTopOf="@+id/listtanggal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/Ruangan"></Spinner>
+        app:layout_constraintStart_toEndOf="@+id/Ruangan">
+    </Spinner>
 
     <TextView
         android:id="@+id/Tanggal"
@@ -74,6 +76,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/option"
+        android:textStyle="bold"
         android:padding="10dp"
         android:text="@string/tangal"
         android:textAlignment="center"
@@ -96,7 +99,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/Tanggal"
-        app:layout_constraintTop_toTopOf="@+id/Tanggal"></Spinner>
+        app:layout_constraintTop_toTopOf="@+id/Tanggal">
+    </Spinner>
 
     <TextView
         android:id="@+id/Waktu"
@@ -109,13 +113,14 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/option"
         android:padding="10dp"
+        android:textStyle="bold"
         android:text="@string/waktu"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.317" />
+        app:layout_constraintVertical_bias="0.317"/>
 
     <Spinner
         android:id="@+id/listwaktu"
@@ -127,7 +132,106 @@
         android:background="@drawable/option"
         android:entries="@array/Ruangtype"
         app:layout_constraintStart_toEndOf="@+id/Waktu"
-        app:layout_constraintTop_toBottomOf="@+id/listtanggal"></Spinner>
+        app:layout_constraintTop_toBottomOf="@+id/listtanggal">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/inputmedrec"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/insertdatabox"
+        android:padding="15dp"
+        android:text="@string/input_medrec"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diit"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/titleinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Input Data Pasien"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewtitle" />
+
+    <EditText
+        android:id="@+id/medrec"
+        android:layout_width="222dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/insertdatabox"
+        android:hint="@string/input_nomor_medrec"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/inputmedrec"
+        app:layout_constraintTop_toBottomOf="@+id/titleinput" />
+
+    <EditText
+        android:id="@+id/inputdiit"
+        android:layout_width="222dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/insertdatabox"
+        android:hint="Input DIIT pasien"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/inputmedrec"
+        app:layout_constraintTop_toBottomOf="@+id/medrec"
+        app:layout_constraintVertical_bias="0.606" />
+
+    <TextView
+        android:id="@+id/diit"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/insertdatabox"
+        android:padding="15dp"
+        android:text="@string/input_medrec"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598" />
+
 
     <Button
         android:id="@+id/search"
@@ -135,64 +239,13 @@
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="52dp"
         android:background="@drawable/searchbox"
         android:text="Search"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listwaktu"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteY="292dp" />
-
-    <ScrollView
-        android:id="@+id/searchresult"
-        android:layout_width="381dp"
-        android:layout_height="338dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/resultbox"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/Title"
-                android:layout_width="115dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20sp"
-                android:layout_weight="2"
-                android:text="@string/nama"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/Datetime"
-                android:layout_width="117dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:text="@string/no_medrec" />
-
-            <TextView
-                android:id="@+id/Authorname"
-                android:layout_width="119dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_weight="1"
-                android:text="@string/diit" />
-        </LinearLayout>
-    </ScrollView>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

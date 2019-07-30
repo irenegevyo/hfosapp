@@ -20,6 +20,12 @@ Terdapat dua fitur utama pada HFOS, View dan Insert.</b>
     <string name="ruangan">Ruangan</string>
     <string name="waktu">Waktu</string>
     <string name="tangal">Tangal</string>
+    <string name="nama">   Nama :</string>
+    <string name="no_medrec">   No MedRec :</string>
+    <string name="diit">   DIIT :</string>
+    <string name="viewtitle">VIEW</string>
+    <string name="input_medrec">Input MedRec</string>
+    <string name="input_nomor_medrec">input nomor medrec</string>
 
     <array name="Ruangtype">
         <item>Sakura</item>
