@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,19 +13,19 @@
         android:layout_width="155dp"
         android:layout_height="45dp"
         android:layout_margin="5dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/option"
         android:padding="10dp"
+        android:text="@string/ruangan"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:text="@string/ruangan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2"/>
+        app:layout_constraintVertical_bias="0.116" />
 
     <Spinner
         android:id="@+id/listruang"
@@ -37,7 +38,7 @@
         android:background="@drawable/option"
         android:entries="@array/Ruangtype"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/Ruangan"
         app:layout_constraintTop_toTopOf="@+id/Ruangan"></Spinner>
 
@@ -46,8 +47,8 @@
         android:layout_width="155dp"
         android:layout_height="45dp"
         android:layout_margin="5dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/option"
@@ -58,7 +59,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.217" />
 
     <Spinner
         android:id="@+id/listtanggal"
@@ -71,7 +72,7 @@
         android:background="@drawable/option"
         android:entries="@array/Ruangtype"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/Tanggal"
         app:layout_constraintTop_toTopOf="@+id/Tanggal"></Spinner>
 
@@ -80,8 +81,8 @@
         android:layout_width="155dp"
         android:layout_height="45dp"
         android:layout_margin="5dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/option"
@@ -92,7 +93,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintVertical_bias="0.317" />
 
     <Spinner
         android:id="@+id/listwaktu"
@@ -100,14 +101,82 @@
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="28dp"
         android:background="@drawable/option"
         android:entries="@array/Ruangtype"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/Waktu"
-        app:layout_constraintTop_toTopOf="@+id/Waktu"></Spinner>
+        app:layout_constraintTop_toBottomOf="@+id/listtanggal"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteY="219dp">
+    </Spinner>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="191dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/searchbox"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listwaktu"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="354dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:layout_weight="2"
+            android:text="This Title"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Datetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="This Datetime" />
+
+        <TextView
+            android:id="@+id/Authorname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="This Author" />
+    </ScrollView>
 
 
 </android.support.constraint.ConstraintLayout>
