@@ -17,4 +17,19 @@ Terdapat dua fitur utama pada HFOS, View dan Insert.</b>
 </string>
     <string name="view">View</string>
     <string name="insert">insert</string>
+    <string name="ruangan">Ruangan</string>
+    <string name="waktu">Waktu</string>
+    <string name="tangal">Tangal</string>
+
+    <array name="Ruangtype">
+        <item>Sakura</item>
+        <item>SMP</item>
+        <item>SMA IPA</item>
+        <item>SMA IPS</item>
+        <item>SMK</item>
+        <item>UN</item>
+        <item>USBN</item>
+        <item>SNMPTN</item>
+        <item>SBMPTN</item>
+    </array>
 </resources>

@@ -4,6 +4,110 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundcol"
     tools:context=".ViewPage">
+
+    <TextView
+        android:id="@+id/Ruangan"
+        android:layout_width="155dp"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/option"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="@string/ruangan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"/>
+
+    <Spinner
+        android:id="@+id/listruang"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/option"
+        android:entries="@array/Ruangtype"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/Ruangan"
+        app:layout_constraintTop_toTopOf="@+id/Ruangan"></Spinner>
+
+    <TextView
+        android:id="@+id/Tanggal"
+        android:layout_width="155dp"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/option"
+        android:padding="10dp"
+        android:text="@string/tangal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Spinner
+        android:id="@+id/listtanggal"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/option"
+        android:entries="@array/Ruangtype"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/Tanggal"
+        app:layout_constraintTop_toTopOf="@+id/Tanggal"></Spinner>
+
+    <TextView
+        android:id="@+id/Waktu"
+        android:layout_width="155dp"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/option"
+        android:padding="10dp"
+        android:text="@string/waktu"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Spinner
+        android:id="@+id/listwaktu"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/option"
+        android:entries="@array/Ruangtype"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/Waktu"
+        app:layout_constraintTop_toTopOf="@+id/Waktu"></Spinner>
+
 
 </android.support.constraint.ConstraintLayout>
